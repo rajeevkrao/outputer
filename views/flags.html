@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Fake Outputter - Flags</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <button onclick="reset()">
+      Reset
+    </button>
+    <br/>
+    Be Sure before clicking this button, as this could even delete all your fake output documents
+  </body>
+  <script>
+    function reset(){
+      localStorage.clear();
+      sessionStorage.clear();
+      document.location.href="/";
+    }
+  </script>
+</html>
