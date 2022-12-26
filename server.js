@@ -28,6 +28,12 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
+/*
+if(1){
+  console.log("111")
+}
+*/
+
 app.get('/flags', function(request, response) {
   response.sendFile(__dirname + '/views/flags.html');
 });
