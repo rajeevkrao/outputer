@@ -1,0 +1,13 @@
+name: DeepSource
+
+on: [push, pull_request]
+
+jobs:
+  deepsource:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run DeepSource
+      uses: deepsourcelabs/action@v0
+      with:
+        api-key: ${{ secrets.DEEPSOURCE_API_KEY }}
