@@ -34,6 +34,11 @@ if(1){
 }
 */
 
+
+function nocall(){
+  console.log("NO Call")
+}
+
 app.get('/flags', function(request, response) {
   response.sendFile(__dirname + '/views/flags.html');
 });
